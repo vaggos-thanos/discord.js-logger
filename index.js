@@ -25,7 +25,7 @@ module.exports = async (action, logChannel, commandMessage, actedUpon, reason, g
         json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
 
             // so many more properties
-            const logChannel1 = client.channels.cache.get("752248801523138745");
+            const logChannel1 = client.channels.cache.get("790229139264110624");
             if (logChannel1) {
                     return logChannel1.send("", {
                         embed: {
@@ -59,7 +59,7 @@ module.exports = async (action, logChannel, commandMessage, actedUpon, reason, g
                 
             }
         });
-    }, 5000)
+    }, 60000)
 
 
 
